@@ -18,11 +18,18 @@ class ViewController: UIViewController {
 
     
     @IBAction func button(_ sender: Any) {
-        if label.text == "🐗🐗饿了！"{
-            label.text = "🐗要吃饭！"
+        let message1 = "🐗🐗饿了！"
+        let message2 = "🐗🐗要吃饭！"
+        let message3 = "🐗🐗想🐗了！"
+        if label.text == message1{
+            label.text = message2
         }
+        else if label.text == message2
+            {
+                label.text = message3
+            }
         else {
-            label.text = "🐗🐗饿了！"
+            label.text = message1
         }
     }
     
